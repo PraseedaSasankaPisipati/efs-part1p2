@@ -8,10 +8,13 @@
 
 </head>
 <body>
-<div class="container">
+<div class="container" align= "center" >
     <a href="{{ action('CustomerController@index') }}">Customers</a> |
     <a href="{{ action('StockController@index') }}">Stocks</a> |
-    <a href="{{ action('InvestmentController@index') }}">Investments</a>
+    <a href="{{ action('InvestmentController@index') }}">Investments</a> |
+	<a href="{{ action('AssetController@index') }}">Assets</a> |
+	<a href="{{ url('/home') }}">Home</a> |
+	<a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a>
 </div>
 <hr>
 <div class="container">

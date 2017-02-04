@@ -17,3 +17,8 @@ Route::get('/', function () {
 Route::resource('customers','CustomerController');
 Route::resource('stocks','StockController');
 Route::resource('investments','InvestmentController');
+Route::resource('assets','AssetController');
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');

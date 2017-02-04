@@ -11,7 +11,7 @@
             <th>Symbol</th>
             <th>Name</th>
             <th>Shares</th>
-            <th>Purchase price</th>
+            <th>Purchase Price</th>
             <th>Purchase Date</th>
             <th colspan="3">Actions</th>
         </tr>

@@ -6,20 +6,27 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Customer;
 
+
+
 class CustomerController extends Controller
 {
     public function index()
     {
-        //
+        
         $customers=Customer::all();
+		
         return view('customers.index',compact('customers'));
     }
 
     public function show($id)
     {
         $customer = Customer::findOrFail($id);
-        return view('customers.show',compact('customer'));
+		
+		return view('customers.show',compact('customer'));
+		
+		
     }
+	
 
 
     public function create()
