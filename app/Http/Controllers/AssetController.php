@@ -63,7 +63,7 @@ class AssetController extends Controller
     }
 	 public function destroy($id)
     {
-        Aset::find($id)->delete();
+        Asset::find($id)->delete();
         return redirect('assets');
     }
 
